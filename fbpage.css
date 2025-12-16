@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1877F2;
+    font-family: Arial, sans-serif;
+}
+
+
+.contentContainer {
+    width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    gap: 15px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* HEADER */
+header {
+    background: #fff;
+    width: 1200px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logoFb {
+    width: 45px;
+}
+
+.searchBox {
+    background: #f0f2f5;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.searchBox img {
+    width: 18px;
+}
+
+.searchBox input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.rightSection img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+/* ASIDE */
+
+
+.asideContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: cover;
+    background-color: #f0f2f5;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.asideHome {
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.imgYr {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* LEFT ASIDE */
+.leftAside {
+    background: #fff;
+    padding: 10px;
+}
+
+.imgAside {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.asideImages div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.asideImages img {
+    width: 25px;
+}
+
+.threNumber {
+    background: #1877F2;
+    padding: 2px 6px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+
+.friendsAside .friendsImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center;
+
+}
+
+.friendsImages img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.asidePhotos .photoProgram {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.photoProgram img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/*MAIN*/
+
+.coverPhoto img {
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.postBox {
+    background: #f0f2f5;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.post {
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e6e6e6;
+}
+
+.postHeader {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.imgYllka {
+    width: 50px;
+}
+
+.postHeader img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.postImg {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+
+.reactions {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.reactions img {
+    width: 22px;
+}
+
+.count {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+/* RIGHT ASIDE */
+.rightAside {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.rightAside img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* MEDIA QUERY - RESPONSIVE */
+@media (max-width: 1300px) {
+
+    .contentContainer,
+    header {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contentContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .rightAside {
+        display: none;
+    }
+}
